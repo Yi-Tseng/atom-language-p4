@@ -1,0 +1,88 @@
+'scopeName': 'source.p4'
+'name': 'P4'
+'fileTypes': ['p4']
+'patterns': [
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end'
+    'name': 'string.quoted.double'
+  }
+  {
+    'begin': '//'
+    'beginCaptures':
+      '0':
+        'name': 'comment'
+    'end': '\\n'
+    'name': 'comment'
+  }
+  {
+    'match': '\\b(if|else if|else|return|hit|miss)\\b'
+    'name': 'keyword.control'
+  }
+  {
+    'match': '\\b(exact|ternary|lpm|range|valid|mask)\\b'
+    'comment': 'table field match type'
+    'name': 'entity.name.type'
+  }
+  {
+    'match': '\\b(reads|actions|min_size|max_size|size|support_timeout|action_profile)\\b'
+    'comment': 'table elements'
+    'name': 'storage.type'
+  }
+  {
+    'match': '\\b(control|action|table|counter|header_type|header|register|parser|metadata|primitive_action|meter|parse_error|default)\\b'
+    'name': 'storage.type'
+  }
+  {
+    'match': '\\b(bytes|packets)\\b'
+    'comment': 'counter/meter/register types'
+    'name': 'storage.type'
+  }
+  {
+    'match': '\\b(width|layout|attributes|type|static|result|direct|instance_count|min_width|saturating)\\b'
+    'comment': 'counter/meter/register fields'
+    'name': 'entity.name.type'
+  }
+  {
+    'match': '\\b(length|fields|max_length)\\b'
+    'comment': 'header fields'
+    'name': 'entity.name.type'
+  }
+  {
+    'match': '\\#include'
+    'name': 'meta.preprocessor.include'
+  }
+  {
+    'match': '\\b(apply|valid|select|current|extract|add_header|copy_header|remove_header|modify_field|add_to_field|add|set_field_to_hash_index|truncate|drop|no_op|push|pop|count|meter|generate_digest|resubmit|recirculate|clone_ingress_pkt_to_ingress|clone_egress_pkt_to_ingress|clone_ingress_pkt_to_egress|clone_egress_pkt_to_egress|register_write|register_read)\\b'
+    'comment': 'primitive actions/builtin functions'
+    'name': 'support.function'
+  }
+  {
+    'match': '[a-zA-Z_][0-9a-zA-Z_]*'
+    'name': 'support.any-method'
+  }
+  {
+    'match': '[\\+|-]?[0-9]+\'[0-9]+'
+    'comment': 'const value'
+    'name': 'constant.numeric'
+  }
+  {
+    'match': '0(x|X)[0-9a-fA-F]+'
+    'name': 'constant.numeric'
+  }
+  {
+    'match': '0(b|B)[01]+'
+    'name': 'constant.numeric'
+  }
+  {
+    'match': '[0-9]+'
+    'name': 'constant.numeric'
+  }
+
+]

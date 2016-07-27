@@ -5,5 +5,14 @@
   "engines": {
     "atom": "*",
     "node": "*"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakeshiTseng/atom-language-p4"
+  },
+  "bugs": {
+    "url": "https://github.com/TakeshiTseng/atom-language-p4/issues"
+  },
+  "license": "MIT"
 }

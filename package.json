@@ -1,6 +1,6 @@
 {
   "name": "language-p4",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Syntax highlighting for P4",
   "engines": {
     "atom": "*",

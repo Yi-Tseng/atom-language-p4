@@ -22,7 +22,7 @@
     'name': 'comment.line.p4'
   }
   {
-    'match':'\\b(header|metadata|field_list|field_list_calculation|parser|parser_exception|parser_value_set|counter|meter|register|action|action_profile|table|control|extern)\\b'
+    'match':'\\b(header_type|header|metadata|field_list|field_list_calculation|parser|parser_exception|parser_value_set|counter|meter|register|action|action_profile|table|control|extern)\\b'
     'name': 'storage.type.object.p4'
   }
   {
@@ -73,7 +73,7 @@
   {
     'match': '\\#define'
     'name': 'meta.preprocessor.define.p4'
-  }  
+  }
   {
     'match': '\\b(apply|valid|select|current|extract|add_header|copy_header|remove_header|modify_field|add_to_field|add|set_field_to_hash_index|truncate|drop|no_op|push|pop|count|meter|generate_digest|resubmit|recirculate|clone_ingress_pkt_to_ingress|clone_egress_pkt_to_ingress|clone_ingress_pkt_to_egress|clone_egress_pkt_to_egress|register_write|register_read)\\b'
     'comment': 'primitive actions/builtin functions'

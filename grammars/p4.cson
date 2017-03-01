@@ -3,6 +3,17 @@
 'fileTypes': ['p4']
 'patterns': [
   {
+    'begin': '/\\*'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.block.begin.p4'
+    'end': '\\*/'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.block.end.p4'
+    'name': 'comment.block.p4'
+  }
+  {
     'begin': '"'
     'beginCaptures':
       '0':

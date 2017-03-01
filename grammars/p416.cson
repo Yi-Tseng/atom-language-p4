@@ -82,6 +82,10 @@
     'name': 'meta.preprocessor.include.p4'
   }
   {
+    'match': '\\#ifndef|\\#ifdef|\\#if|\\#else|\\#endif|\\#elif'
+    'name': 'meta.preprocessor.p4'
+  }
+  {
     'match': '\\#define'
     'name': 'meta.preprocessor.define.p4'
   }

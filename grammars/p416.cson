@@ -37,8 +37,12 @@
     'name': 'storage.type.object.p4'
   }
   {
-    'match': '\\b(void|const|bool|varbit|bit|int|typedef|tuple|enum)\\b'
+    'match': '\\b(void|const|bool|varbit|int|typedef|tuple|enum)\\b'
     'name': 'storage.data.type.p4'
+  }
+  {
+    'match': 'bit(<\\d+>)'
+    'name': 'support.type.bit.p4'
   }
   {
     'match': '\\b(hit|miss|latest|return|default)\\b'
